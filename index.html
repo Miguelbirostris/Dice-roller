@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
-    <title>Roll a dice</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <title>Roll a Dice</title>
 </head>
 <body id="body">
-<div class="container">
+  <div class="container">
     <p>You rolled: <b><span id="span">0</span></b></p>
-    <h1 id="result">0</h1>
-    <img id="dado" src="imagens/dice.png" alt="Contorno do dado">
-    <button class="botao" id="centralizar" onclick="rolar()">Roll</button>
-</div>
-    <script  src="script.js"></script>
+
+    <!-- Dice image with number overlay -->
+    <div class="dice-wrapper">
+      <h1 id="result">0</h1>
+      <img id="dado" src="imagens/dice.png" alt="Dice outline" />
+    </div>
+
+    <!-- Roll button -->
+    <button class="botao" onclick="rolar()">Roll</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
