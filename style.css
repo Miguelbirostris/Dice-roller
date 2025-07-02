@@ -1,33 +1,23 @@
 :root{
     --black: rgb(28, 29, 36);
-    --white: whitesmoke;
     --dark-red: #a8041d;
     --dark-green: #174240;
     --red: #eb0404;
     --green: #01c321;
 }
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: var(--black);
     font-family: 'Poppins', sans-serif;
 }
-#centralizar{
+.container {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.container{
-    width: 70%;
-    max-width: 400px;
-    padding: 30px 50px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-color: whitesmoke;
-    transform: translate(-50%,-50%);
-    border-radius: 8px;
+    transform: none;
+    top: auto;
+    left: auto;
 }
 h1{
     position: absolute;
@@ -37,45 +27,15 @@ h1{
     transform: translateX(-50%);
     font-size: 40px;
 }
-img{
+img {
     width: 50%;
-    margin-bottom: 5px;
-    position: relative;
-    left: 25%;
+    margin: 0 auto 5px;
+    display: block;
 }
 p{
     text-align: center;
     margin-bottom: 25px;
     font-size: 18px;
-}
-.modificador{
-    width: 145px;
-    height: 46px;
-    display: flex;
-    margin-bottom: 25px;
-    border: 3px solid rgb(28, 29, 36);
-    border-radius: 5px;
-}
-input[type="number"]{
-    background-color: var(--white);
-    -moz-appearance: textfield;
-    text-align: center;
-    font-size: 30px;
-    border: none;
-    width: 80px;
-    pointer-events: none;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-button{
-    width: 30px;
-    color: #3264fe;
-    background-color: var(--white);
-    border: none;
-    font-size: 38px;
-    cursor: pointer;
 }
 .botao{
     background-color: var(--black);
